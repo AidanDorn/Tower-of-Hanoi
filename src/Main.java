@@ -5,10 +5,10 @@ public class Main {
     }
     public static void move(int n, String t1, String t2, String t3){
         if(n==1){
-            System.out.println("Moved "+t1+" to "+t3);
+            System.out.println("Moved Disk "+n+" from "+t1+" to "+t3);
         } else{
             move(n-1,t1,t3,t2); //Recursion
-            System.out.println("Moved "+t1+" to "+t3);
+            System.out.println("Moved Disk "+n+" from "+t1+" to "+t3);
             move(n-1,t2,t1,t3); //Recursion
         }
     }
